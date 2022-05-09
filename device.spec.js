@@ -7,7 +7,7 @@ describe('Device Tests', ()=> {
     })
 
     it('1880', ()=> {
-        cy.viewport('1980, 1080')
+        cy.viewport(1980, 1080)
         cy.visit('http://automationpractice.com/index.php', {timeout: 10000})
         cy.wait(3000)
     })
