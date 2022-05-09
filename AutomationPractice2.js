@@ -8,6 +8,7 @@ describe('Working with inputs', (
     it('Should navidate the user to the website and fill username', ()=> {
 
         cy.visit('http://zero.webappsecurity.com/login.html')
+        cy.title().should('include', 'Zero - Log in')
 
         cy.get('#user_login').clear('')
         cy.get('#user_login').type('user', { delay: 50})
